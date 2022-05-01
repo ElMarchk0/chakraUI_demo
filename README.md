@@ -5,7 +5,7 @@ This project was bootstrapped with
 
 To install the dependacies, you can run:
 
-### `yarn add`
+### `yarn install`
 
 In the project directory, you can run:
 
