@@ -8,7 +8,7 @@ type Props = {
 
 const ProductCard: React.FC<Props> = ({item, addToCart}) => {
   return (
-    <Box maxW='sm' borderWidth='1px' borderRadius='lg' roundedTop="lg" padding="1em">
+    <Box maxW='sm' borderWidth='1px' borderRadius='lg' roundedTop="lg" >
       <Image src={item.image} />
       <Box p='6' backgroundColor='gray.50' >
         <Box display='flex' alignItems='baseline'>
