@@ -20,8 +20,8 @@ const Cart: FC<Props> = ({cartItems, removeFromCart, incementQuantity, decrement
               <Text>$ {(item.price * item.quantity).toFixed(2)}</Text>
               <Text>Quantity: {item.quantity}</Text>
               <Button margin={2} onClick={() => incementQuantity(item.id)}>+</Button>
-              {/* Hide decrement button if quantity is equal to one */}
-              {item.quantity > 1 && <Button margin={2} onClick={() => decrementQuantity(item.id)}>-</Button>}
+              {/* Disable decrement if quantity is equal to zero */}
+              { item.quantity > 1 ? <Button margin={2} onClick={() => decrementQuantity(item.id)}>-</Button> : <Button margin={2} isDisabled={true}>-</Button>}
               <Button margin={2} onClick={() => removeFromCart(item.id)}>Remove Item</Button>
             </Box>
           </SimpleGrid>
