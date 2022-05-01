@@ -3,7 +3,7 @@ This project was bootstrapped with
 
 ## Available Scripts
 
-Install dependacies:
+To install the dependacies, you can run:
 
 ### `yarn add`
 
