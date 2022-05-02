@@ -51,7 +51,6 @@ const App = () => {
       if (isInCart) {
         return prev.map(i => i.id === item.id ? {...i, quantity: i.quantity + 1} : i)
       }
-      // add cartitems to local storage
       return [...prev, {...item, quantity: 1}]
     })
   }
